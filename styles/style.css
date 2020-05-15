@@ -3,13 +3,14 @@
 }
 
 .nav {
-	background-color: #f3a505;
+	background-color: #daac00;
 	height: 100px;
 }
 
 
 .logo {
 	margin-right: 500px;
+	width: 100px;
 }
 
 .img {
@@ -18,60 +19,84 @@
 }
 
 .meny {
-	
+	margin-left: 400px;
+	margin-top: -78px;
 }
 
-
-.form {	
-	position: absolute;
+.search {
 	margin-left: 1000px;
-	margin-bottom: 900px;
+	margin-top: 27px;
 }
 
-.button-Home {
+.search input , .seacrh button .search img {
+	border: 0;
+}
+
+.search form {
+	box-shadow: 6px 10px 5px rgba(122,122,122,0.2);
+	margin-right: 141px;
+}
+
+.search input {
+	width: 150px;
+	height: 40px;
+	padding-left: 15px;
+	background-color: #fcc302;
+}
+.search input::placeholder {
+	color: white;
+}
+
+.search button{
+	border: 0;
+	background-color: #00ccff;
 	position: absolute;
-	background-color: #f3a505;
+	width: 60px;
+	height: 42px;
+}
+
+.search img {
+	position: absolute;
+	margin-top: -12px;
+	margin-left: -10px;
+}
+
+.a-Home {
+	position: absolute;
+	background-color: #daac00;
 	color: white;
 	font-size: 30px;
-	border: 0;
-	width: 100px;
-	height: 50px;
 	margin-left: 50px;
-	margin-top: 21px;
+	margin-top: 30px;
+	text-decoration: initial;
 }
 
-.button-About {
+.a-About {
 	position: absolute;
-	background-color: #f3a505;
+	background-color: #daac00;
 	color: white;
 	font-size: 30px;
-	border: 0;
-	width: 100px;
-	height: 50px;
 	margin-left: 170px;
-	margin-top: 21px;
+	margin-top: 30px;
+	text-decoration: initial;
 }
 
-.button-Service {
+.a-Service {
 	position: absolute;
-	background-color: #f3a505;
+	background-color: #daac00;
 	color: white;
 	font-size: 30px;
-	border: 0;
-	width: 120px;
-	height: 50px;
 	margin-left: 290px;
-	margin-top: 21px;
+	margin-top: 30px;
+	text-decoration: initial;
 }
 
-.button-Contact {
+.a-Contact {
 	position: absolute;
-	background-color: #f3a505;
+	background-color: #daac00;
 	color: white;
 	font-size: 30px;
-	border: 0;
-	width: 130px;
-	height: 50px;
 	margin-left: 430px;
-	margin-top: 21px;
+	margin-top: 30px;
+	text-decoration: initial;
 }
