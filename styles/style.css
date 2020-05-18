@@ -100,3 +100,19 @@
 	margin-top: 30px;
 	text-decoration: initial;
 }
+
+
+
+.content {
+	background-color: #fcc302;
+}
+
+.p-content {
+  font-size: 66px;
+  color: white;
+  font-weight: bold;
+  background-color: #fcc302;
+  position: absolute;
+  left: 137px;
+  top: 240px;
+}
