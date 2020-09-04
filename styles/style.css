@@ -2,101 +2,61 @@
 	margin: 0;
 }
 
-.nav {
+.nav > .container {
 	background-color: #daac00;
+	
+}
+
+.container {
+	display: flex;
+	justify-content: space-evenly;
 	height: 100px;
 }
 
-
-.logo {
-	margin-right: 500px;
-	width: 100px;
-}
-
-.img {
-	margin-left: 150px;
-	margin-top: 20px;
-}
-
 .meny {
-	margin-left: 400px;
-	margin-top: -78px;
-}
-
-.search {
-	margin-left: 1000px;
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 35%;
 	margin-top: 27px;
 }
 
-.search input , .seacrh button .search img {
-	border: 0;
+.logo {
+	margin-top: 18px;
 }
 
-.search form {
-	box-shadow: 6px 10px 5px rgba(122,122,122,0.2);
-	margin-right: 141px;
+.search {
+	margin-right: 60px;
+}
+
+.search input , button{
+	border: 0;
+	margin-top: 27px;
+}
+
+.search form , button {
+	box-shadow: 5px 15px 7px rgba(122,122,122,0.2);
 }
 
 .search input {
-	width: 150px;
 	height: 40px;
 	padding-left: 15px;
 	background-color: #fcc302;
 }
+
 .search input::placeholder {
 	color: white;
 }
 
-.search button{
-	border: 0;
-	background-color: #00ccff;
+.button{
 	position: absolute;
+	background-color: #00ccff;
 	width: 60px;
 	height: 42px;
+
 }
 
-.search img {
-	position: absolute;
-	margin-top: -12px;
-	margin-left: -10px;
-}
-
-.a-Home {
-	position: absolute;
-	background-color: #daac00;
+.meny_button {
 	color: white;
 	font-size: 30px;
-	margin-left: 50px;
-	margin-top: 30px;
-	text-decoration: initial;
-}
-
-.a-About {
-	position: absolute;
-	background-color: #daac00;
-	color: white;
-	font-size: 30px;
-	margin-left: 170px;
-	margin-top: 30px;
-	text-decoration: initial;
-}
-
-.a-Service {
-	position: absolute;
-	background-color: #daac00;
-	color: white;
-	font-size: 30px;
-	margin-left: 290px;
-	margin-top: 30px;
-	text-decoration: initial;
-}
-
-.a-Contact {
-	position: absolute;
-	background-color: #daac00;
-	color: white;
-	font-size: 30px;
-	margin-left: 430px;
-	margin-top: 30px;
 	text-decoration: initial;
 }
