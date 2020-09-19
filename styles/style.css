@@ -431,7 +431,30 @@ button {
 
 .buying-dog__sale {
 	margin-right: 30px;
-	text-decoration: line-through;
+}
+
+.buying-dog__trait50 {
+	border: 2px solid #29271a;
+	width: 70px;
+	position: absolute;
+	top: 3825px;
+	left: 225px;
+}
+
+.buying-dog__trait40 {
+	border: 2px solid #29271a;
+	width: 70px;
+	position: absolute;
+	top: 3825px;
+	left: 592px;
+}
+
+.buying-dog__trait45 {
+	border: 2px solid #29271a;
+	width: 70px;
+	position: absolute;
+	top: 3825px;
+	left: 960px;
 }
 
 .buying-dog__cost-sale {
@@ -621,7 +644,7 @@ button {
 	font-size: 20px;
 }
 
-.Recent-posts__link:hover {
+.Recent-posts__link:hover .Recent-posts__plus {
 	text-decoration: initial;
 	color: #00BEC9;
 	font-size: 20px;
@@ -653,6 +676,13 @@ button {
 	text-decoration: initial;
 }
 
+.footer__About:hover {
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: lightblue;
+	text-decoration: initial;
+}
+
 .footer__Services {
 	font-size: 30px;
 	margin-bottom: 10px;
@@ -660,8 +690,22 @@ button {
 	text-decoration: initial;
 }
 
+.footer__Services:hover {
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: lightblue;
+	text-decoration: initial;
+}
+
 .footer__subtitle {
 	color: white;
+	text-decoration: initial;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.footer__subtitle:hover {
+	color: lightblue;
 	text-decoration: initial;
 	font-size: 20px;
 	margin-bottom: 5px;
