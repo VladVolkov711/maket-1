@@ -1,3 +1,23 @@
+/*             group_1            */
+
+@font-face {
+
+	font-family: Pompadur;
+	src: url(fonts/Poppins.ttf);
+}
+
+p {
+	font-family: "Poppins";
+}
+
+b {
+	font-family: "Poppins"
+}
+
+button {
+	border: 0;
+}
+
 .body {
 	margin: 0;
 }
@@ -9,9 +29,10 @@
 .container {
 	max-width: 1100px;
 	margin: auto;
+	z-index: 2;
 }
 
-.nav__container {
+.nav .container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -28,29 +49,29 @@
 	height: 40%;
 }
 
-.search form {
+.search .nav__form {
 	height: 100%;
 }
 
-.search input , button{
+.search .nav__input , .nav__button{
 	border: 0;
 }
 
-.search form , button {
+.search .nav__form , .nav__button {
 	display: flex;
 	box-shadow: 5px 15px 7px rgba(122,122,122,0.2);
 }
 
-.search input {
+.search .nav__input {
 	padding-left: 15px;
 	background-color: #fcc302;
 }
 
-.search input::placeholder {
+.search .nav__input::placeholder {
 	color: white;
 }
 
-.button{
+.nav__button{
 	display: block;
 	background-color: #00ccff;
 	width: 60px;
@@ -64,11 +85,15 @@
 	text-decoration: initial;
 }
 
+.menu__link:hover {
+	color: #0F3D38;
+}
+
 .home {
 	background-color: #fcc302;
 }
 
-.home__title_text {
+.home .container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -76,7 +101,7 @@
 	height: 700px;
 }
 
-.home_title_subtitle {
+.home__information {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
@@ -92,16 +117,16 @@
 }
 
 .home__link {
-	height: 100%
+	height: 50%
 }
 
-.home_text_title {
+.home__text__first {
 	font-size: 60px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
-.home_text_subtitle {
+.home__text__lorem {
 	font-size: 30px;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -110,15 +135,564 @@
 .home__button {
 	text-decoration: initial;
 	color: white;
-	border-radius: 5px;
+	border-radius: 7px;
 	padding: 15px;
 	margin-right: 40px;
 }
 
 .home__button_contact-us {
 	background-color: #00ccff;
+	border: 2px solid #00ccff;
+}
+
+.home__button_contact-us:hover {
+	background-color: #14BEC8;
+	border: 2px solid;
+	border-color: #16A8B1;
 }
 
 .home__button_our-services {
 	border:1px solid white;
+}
+
+.home__button_our-services:hover {
+	background-color: #FFD853;
+	border:1px solid white;
+}
+
+/*             group_2            */
+
+.veterinar-informaton {
+	background-color: white;
+}
+
+.veterinar-informaton .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 700px;
+}
+
+.veterinar-informaton__text {
+	height: 300px;
+	z-index: 2;
+}
+
+.veterinar-informaton__title {
+	font-size: 50px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 55%;
+}
+
+.veterinar-informaton__subtitle {
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 45%;
+}
+
+.veterinar-informaton__button {
+	background-color: #FCC302;
+	border-radius: 7px;
+	text-decoration: initial;
+	padding: 15px;
+	color: white;
+}
+
+.veterinar-informaton__button:hover {
+	background-color: #FFD853;
+	border-radius: 7px;
+	text-decoration: initial;
+	padding: 15px;
+	color: white;
+}
+
+.veterinar-informaton__video {
+	z-index: 2;
+}
+
+.veterinar-informaton__videoclip__dog {
+	object-fit: fill;
+}
+
+.veterinar-informaton__button__play{
+	background-color: white;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 1100px;
+	left: 965px;
+	z-index: 4;
+}
+
+.veterinar-informaton__button__play:hover {
+	display: none;
+}
+
+.veterinar-informaton__tringle{
+	background-color: #fcc302;
+	width: 30px;
+	height: 30px;
+	pointer-events: none;
+	position: absolute;
+	top: 20px;
+	left: 25px;
+	clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.veterinar-informaton__bloсk {
+	background-color: #FCC302;
+	width: 240px;
+	height: 200px;
+	position: absolute;
+	left: 750px;
+	top: 1170px;
+	z-index: 1;
+}
+
+/*             group_3            */
+
+.postures-for-treatment {
+	background-color: #fcc302;
+	height: 900px;
+}
+
+.postures-for-treatment__text__information {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	height: 33%;
+}
+
+.postures-for-treatment__title {
+	font-size: 60px;
+	margin-bottom: 0px;
+	height: 5%;
+}
+
+.postures-for-treatment__subtitle {
+	font-size: 30px;
+	margin-bottom: 80px;
+}
+
+.postures-for-treatment__image {
+	display: flex;
+	justify-content: space-between;
+}
+
+.postures-for-treatment__image__information__text {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+
+.postures-for-treatment__signature {
+	height: 100%;
+}
+
+.postures-for-treatment__signature-title {
+	font-size: 30px;
+	height: 20%
+}
+
+.postures-for-treatment__signature-subtitle {
+	font-size: 20px;
+}
+
+/*             group_4            */
+
+.ear-treatment .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 700px;
+}
+
+.ear-treatment__video {
+	object-fit: fill;
+	z-index: 2;
+}
+
+.ear-treatment__title {
+	font-size: 50px;
+	height: 100px;
+}
+
+.ear-treatment__subtitle {
+	font-size: 30px;
+}
+
+.ear-treatment__link {
+	background-color: #FCC302;
+	border-radius: 7px;
+	float: right;
+	padding: 15px;
+}
+
+.ear-treatment__Our-Service {
+	text-decoration: initial;
+	color: white;
+}
+
+.ear-treatment__button_play {
+	background-color: white;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 315px;
+	top: 2703px;
+	z-index: 3;
+}
+
+.ear-treatment__button_play:hover {
+	display: none;
+}
+
+.ear-treatment__tringle {
+	background-color: #DAAC00;
+	width: 30px;
+	height: 30px;
+	pointer-events: none;
+	position: absolute;
+	left: 25px;
+	top: 20px;
+	clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.ear-treatment__bloсk {
+	background-color: #FCC302;
+	width: 250px;
+	height: 180px;
+	position: absolute;
+	left: 350px;
+	top: 2800px;
+}
+
+/*             group_5            */
+
+.buying-dog {
+	background-color: #FCC302;
+	height: 900px;
+}
+
+.buying-dog__text__information {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	height: 35%;
+}
+
+.buying-dog__title {
+	font-size: 60px;
+	margin-bottom: 0px;
+}
+
+.buying-dog__subtitle {
+	font-size: 35px;
+	margin-top: 20px; 	
+}
+
+.buying-dog__image {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 35%;
+}
+
+.buying-dog__cost__information {
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+
+.buying-dog__cost {
+	display: flex;
+	justify-content: space-around;
+	height: 10%;
+	margin-top: 50px;
+}
+
+.buying-dog__sale {
+	margin-right: 30px;
+}
+
+.buying-dog__cost__sale {
+	font-size: 40px;
+	color: white;
+	margin-top: 0px;
+}
+
+.buying-dog__button {
+	background-color: #00BEC9;
+	border-radius: 60px;
+	color: white;
+	font-size: 17px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+/*             group_6            */
+
+.vetcare-team {
+	background-color: white;
+	height: 1000px;
+}
+
+.vetcare-team__text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.vetcare-team__title {
+	font-size: 60px;
+	margin-top: 100px;
+	margin-bottom: 0px;
+}
+
+.vetcare-team__subtitle {
+	font-size: 35px;
+}
+
+.vetcare-team__image {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.vetcare-team__image-size {
+	width: 345px;
+	height: 345px;
+}
+
+.vetcare-team__signature {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.vetcare-team__signature__title {
+	font-size: 35px;
+	margin-bottom: 0px;
+}
+
+.vetcare-team__signature__subtitle {
+	font-size: 20px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.vetcare-team__social-networks {
+	display: flex;
+	justify-content: space-around;
+}
+
+.vetcare-team__social-network {
+	background-color: #DAAC00;
+	border-radius: 50%;
+	margin-top: 20px;
+	width: 40px;
+	height: 40px;
+	border: 0;
+}
+
+.vetcare-team__social-network_icon {
+	margin-top: 3px;
+	width: 25px;
+	height: 25px;
+}
+
+/*             group_7            */
+
+.all-time-information {
+	background: url(../image/all-time-information/man-with-dog.png);
+	height: 550px;
+}
+
+.all-time-information__icon {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 550px;
+}
+
+.all-time-information__text {
+	color: white;
+}
+
+.all-time-information__title {
+	font-size: 30px;
+	margin-top: 50px;
+}
+
+/*             group_8            */
+
+.Recent-posts {
+	background-color: white;
+	height: 960px;
+}
+
+.Recent-posts__title {
+	font-size: 60px;
+	margin-bottom: 0px;
+}
+
+.Recent-posts__subtitle {
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.Recent-posts__image__information {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.Recent-posts__image {
+	width: 350px;
+	height: 350px;
+}
+
+.Recent-posts__information {
+	display: flex;
+	justify-content: space-around;
+}
+
+.Recent-posts__signature {
+	font-size: 25px;
+}
+
+.Recent-posts__date {
+	color: #00BEC9;
+}
+
+.Recent-posts__signature__subtitle {
+	font-size: 15px;
+}
+
+.Recent-posts__date {
+	text-transform: uppercase;
+}
+
+.Recent-posts__link {
+	text-decoration: initial;
+	color: #00BEC9;
+	font-size: 20px;
+}
+
+.Recent-posts__link:hover {
+	text-decoration: initial;
+	color: #00BEC9;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+/*             group_9(footer)            */
+
+.footer {
+	background-color: #343434;
+}
+
+.footer .container {
+	height: 500px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__column {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__About {
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: white;
+	text-decoration: initial;
+}
+
+.footer__Services {
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: white;
+	text-decoration: initial;
+}
+
+.footer__subtitle {
+	color: white;
+	text-decoration: initial;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.footer__search__information {
+	width: 550px;
+	height: 250px;
+}
+
+.footer__title-search {
+	color: white;
+	font-size: 35px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: right;
+}
+
+.footer__subtitle-search {
+	text-align: right;
+	font-size: 20px;
+	color: white;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.footer__form {
+	height: 60px;
+	display: flex;
+}
+
+.footer__input {
+	height: 58px;
+	width: 350px;
+	border: 0;
+	background-color: #DAAC00;
+	margin-left: 100px;
+}
+
+.footer__button-form {
+	height: 59px;
+	width: 100px;
+	background-color: #00BEC9;
+}
+
+.footer__img {
+	width: 20px;
+	height: 20px;
+}
+
+.footer__Services__button {
+	margin-left: 378px;
+}
+
+.footer__button__social-network {
+	border-radius: 60px;
+	width: 30px;
+	height: 30px;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+.footer__search-image {
+	height: 15px;
+	width: 15px;
 }
