@@ -2,16 +2,12 @@
 
 @font-face {
 
-	font-family: Pompadur;
-	src: url(fonts/Poppins.ttf);
+	font-family: Poppins;
+	src: url(../fonts/Poppins.ttf);
 }
 
-p {
+body {
 	font-family: "Poppins";
-}
-
-b {
-	font-family: "Poppins"
 }
 
 button {
@@ -81,7 +77,7 @@ button {
 
 .menu__link {
 	color: white;
-	font-size: 30px;
+	font-size: 20px;
 	text-decoration: initial;
 }
 
@@ -109,25 +105,25 @@ button {
 }
 
 .home__title {
-	height: 100%;
+	height: 50%;
 }
 
 .home__subtitle {
-	height: 100%;
+	height: 50%;
 }
 
 .home__link {
 	height: 50%
 }
 
-.home__text__first {
-	font-size: 60px;
+.home__text-first {
+	font-size: 50px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
-.home__text__lorem {
-	font-size: 30px;
+.home__text-lorem {
+	font-size: 20px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -140,22 +136,22 @@ button {
 	margin-right: 40px;
 }
 
-.home__button_contact-us {
+.home__button-contact-us {
 	background-color: #00ccff;
 	border: 2px solid #00ccff;
 }
 
-.home__button_contact-us:hover {
+.home__button-contact-us:hover {
 	background-color: #14BEC8;
 	border: 2px solid;
 	border-color: #16A8B1;
 }
 
-.home__button_our-services {
+.home__button-our-services {
 	border:1px solid white;
 }
 
-.home__button_our-services:hover {
+.home__button-our-services:hover {
 	background-color: #FFD853;
 	border:1px solid white;
 }
@@ -212,11 +208,11 @@ button {
 	z-index: 2;
 }
 
-.veterinar-informaton__videoclip__dog {
+.veterinar-informaton__videoclip-dog {
 	object-fit: fill;
 }
 
-.veterinar-informaton__button__play{
+.veterinar-informaton__button-play{
 	background-color: white;
 	border-radius: 50%;
 	width: 70px;
@@ -227,7 +223,7 @@ button {
 	z-index: 4;
 }
 
-.veterinar-informaton__button__play:hover {
+.veterinar-informaton__button-play:hover {
 	display: none;
 }
 
@@ -259,7 +255,7 @@ button {
 	height: 900px;
 }
 
-.postures-for-treatment__text__information {
+.postures-for-treatment__text-information {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -274,6 +270,7 @@ button {
 }
 
 .postures-for-treatment__subtitle {
+	text-align: center;
 	font-size: 30px;
 	margin-bottom: 80px;
 }
@@ -283,7 +280,7 @@ button {
 	justify-content: space-between;
 }
 
-.postures-for-treatment__image__information__text {
+.postures-for-treatment__image-information-text {
 	color: white;
 	display: flex;
 	justify-content: space-between;
@@ -296,11 +293,13 @@ button {
 }
 
 .postures-for-treatment__signature-title {
+	text-align: center;
 	font-size: 30px;
 	height: 20%
 }
 
 .postures-for-treatment__signature-subtitle {
+	text-align: center;
 	font-size: 20px;
 }
 
@@ -319,11 +318,13 @@ button {
 }
 
 .ear-treatment__title {
+	text-align: right;
 	font-size: 50px;
 	height: 100px;
 }
 
 .ear-treatment__subtitle {
+	text-align: right;
 	font-size: 30px;
 }
 
@@ -339,7 +340,7 @@ button {
 	color: white;
 }
 
-.ear-treatment__button_play {
+.ear-treatment__button-play {
 	background-color: white;
 	border-radius: 50%;
 	width: 70px;
@@ -350,7 +351,7 @@ button {
 	z-index: 3;
 }
 
-.ear-treatment__button_play:hover {
+.ear-treatment__button-play:hover {
 	display: none;
 }
 
@@ -381,7 +382,7 @@ button {
 	height: 900px;
 }
 
-.buying-dog__text__information {
+.buying-dog__text-information {
 	display: flex;
 	flex-direction: column;
 	color: white;
@@ -389,11 +390,13 @@ button {
 }
 
 .buying-dog__title {
+	text-align: center;
 	font-size: 60px;
 	margin-bottom: 0px;
 }
 
 .buying-dog__subtitle {
+	text-align: center;
 	font-size: 35px;
 	margin-top: 20px; 	
 }
@@ -405,7 +408,7 @@ button {
 	height: 35%;
 }
 
-.buying-dog__cost__information {
+.buying-dog__cost-information {
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
@@ -415,14 +418,23 @@ button {
 	display: flex;
 	justify-content: space-around;
 	height: 10%;
-	margin-top: 50px;
+}
+
+.buying-dog__money {
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	font-size: 35px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .buying-dog__sale {
 	margin-right: 30px;
+	text-decoration: line-through;
 }
 
-.buying-dog__cost__sale {
+.buying-dog__cost-sale {
 	font-size: 40px;
 	color: white;
 	margin-top: 0px;
@@ -453,12 +465,14 @@ button {
 }
 
 .vetcare-team__title {
+	text-align: center;
 	font-size: 60px;
-	margin-top: 100px;
+	margin-top: 70px;
 	margin-bottom: 0px;
 }
 
 .vetcare-team__subtitle {
+	text-align: center;
 	font-size: 35px;
 }
 
@@ -480,14 +494,15 @@ button {
 	align-items: center;
 }
 
-.vetcare-team__signature__title {
+.vetcare-team__signature-title {
 	font-size: 35px;
 	margin-bottom: 0px;
 }
 
-.vetcare-team__signature__subtitle {
+.vetcare-team__signature-subtitle {
 	font-size: 20px;
 	margin-top: 10px;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -505,7 +520,7 @@ button {
 	border: 0;
 }
 
-.vetcare-team__social-network_icon {
+.vetcare-team__social-network-icon {
 	margin-top: 3px;
 	width: 25px;
 	height: 25px;
@@ -514,7 +529,7 @@ button {
 /*             group_7            */
 
 .all-time-information {
-	background: url(../image/all-time-information/man-with-dog.png);
+	background: url(../images/all-time-information/man-with-dog.png);
 	height: 550px;
 }
 
@@ -525,11 +540,16 @@ button {
 	height: 550px;
 }
 
+.all-time-information__icon-information {
+	text-align: center;
+}
+
 .all-time-information__text {
 	color: white;
 }
 
 .all-time-information__title {
+	text-align: center;
 	font-size: 30px;
 	margin-top: 50px;
 }
@@ -542,16 +562,18 @@ button {
 }
 
 .Recent-posts__title {
+	text-align: center;
 	font-size: 60px;
 	margin-bottom: 0px;
 }
 
 .Recent-posts__subtitle {
+	text-align: center;
 	font-size: 30px;
 	margin-top: 10px;
 }
 
-.Recent-posts__image__information {
+.Recent-posts__image-information {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 70px;
@@ -575,12 +597,22 @@ button {
 	color: #00BEC9;
 }
 
-.Recent-posts__signature__subtitle {
+.Recent-posts__signature-subtitle {
 	font-size: 15px;
 }
 
 .Recent-posts__date {
 	text-transform: uppercase;
+}
+
+.Recent-posts__link-anim {
+	display: flex;
+}
+
+.Recent-posts__animation {
+	text-decoration: initial;
+	color: #00BEC9;
+	font-size: 20px;
 }
 
 .Recent-posts__link {
@@ -635,7 +667,7 @@ button {
 	margin-bottom: 5px;
 }
 
-.footer__search__information {
+.footer__search-information {
 	width: 550px;
 	height: 250px;
 }
@@ -680,16 +712,16 @@ button {
 	height: 20px;
 }
 
-.footer__Services__button {
+.footer__Services-button {
 	margin-left: 378px;
 }
 
-.footer__button__social-network {
+.footer__button-social-network {
 	border-radius: 60px;
 	width: 30px;
 	height: 30px;
 	margin-top: 30px;
-	margin-left: 10px;
+	margin-left: 9px;
 }
 
 .footer__search-image {
