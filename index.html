@@ -10,25 +10,27 @@
 	<nav class="nav">
 		<div class="container">
 			<div class="logo">
-				<img class="img" src="images/nav-img/lapa.png">
+				<a href="#">
+					<img class="img" src="images/nav-img/lapa.png">
+				</a>
 			</div>
 			<div class="menu">
-				<a class="menu__link" href="https://vk.com/herabrin2281337">Home</a>
-				<a class="menu__link" href="https://vk.com/herabrin2281337">About</a>
-				<a class="menu__link" href="https://vk.com/herabrin2281337">Service</a>
-				<a class="menu__link" href="https://vk.com/herabrin2281337">Contact</a>
+				<a class="menu__link" href="#">Home</a>
+				<a class="menu__link" href="#">About</a>
+				<a class="menu__link" href="#">Service</a>
+				<a class="menu__link" href="#">Contact</a>
 			</div>
 			<div class="search">
 				<form class="nav__form">
 					<input class="nav__input" type="text" placeholder="Search...">
 					<button class="nav__button">
-						<img class="search__img" src="images/nav-img/Search-Button.png">
+						<img class="nav__search-img" src="images/nav-img/Search-Button.png">
 					</button>
 				</form>
 			</div>
 		</div>
 	</nav>
-	<section id="#home" class="home">
+	<section id="home" class="home">
 		<div class="container">
 			<div class="home__information">
 				<div class="home__title">
@@ -47,8 +49,8 @@
 					</p>
 				</div>
 				<div class="home__link">
-					<a class="home__button home__button-contact-us" href="https://vk.com/user124578">contact us</a>
-					<a class="home__button home__button-our-services" href="https://vk.com/user124578">Our Servies</a>
+					<a class="home__button home__button-contact-us" href="#">contact us</a>
+					<a class="home__button home__button-our-services" href="#">Our Servies</a>
 				</div>
 			</div>
 			<div class="home__dog-img">
@@ -56,7 +58,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="#veterinar-informaton" class="veterinar-informaton">
+	<section id="veterinar-informaton" class="veterinar-informaton">
 		<div class="container">
 			<div class="veterinar-informaton__text">
 				<p class="veterinar-informaton__title">
@@ -70,26 +72,24 @@
 				    suffered alteration in some form, by <br>
 				    humour randomised words.
 				</p>
-				<a class="veterinar-informaton__button" href="https://vk.com/user124578">Our Service</a>
+				<a class="veterinar-informaton__button" href="#">Our Service</a>
 			</div>
 			<div class="veterinar-informaton__video">
 				<video class="veterinar-informaton__videoclip-dog" height="400px" width="450px" controls="controls" poster="images/section-veterinar-informaton/clip.png">
 					<source src="videos/catclip.mp4">
 				</video>
+				<div class="veterinar-informaton__button-play">
+					<div class="veterinar-informaton__tringle"></div>
+				</div>
+				<div class="veterinar-informaton__bloсk"></div>
 			</div>
-			<div class="veterinar-informaton__button-play">
-				<div class="veterinar-informaton__tringle"></div>
-			</div>
-			<div class="veterinar-informaton__bloсk"></div>
 		</div>
 	</section>
-	<section id="#postures-for-treatment" class="postures-for-treatment">
+	<section id="postures-for-treatment" class="postures-for-treatment">
 		<div class="container">
 			<div class="postures-for-treatment__text-information">
 				<p class="postures-for-treatment__title">
-					<b>
-						Title here
-					</b>
+					<b>Title here</b>
 				</p>
 				<p class="postures-for-treatment__subtitle">
 					Lorem Ipsum available, but the majority have <br>
@@ -135,15 +135,17 @@
  			</div>
 		</div>
 	</section>
-	<section id="#ear-treatment" class="ear-treatment">
+	<section id="ear-treatment" class="ear-treatment">
 		<div class="container">
-			<video class="ear-treatment__video" width="450px" height="400px" controls="controls" poster="images/ear-treatment/dog-treatment.png">
-				<source src="videos/catclip2.mp4">
-			</video>
-			<div class="ear-treatment__button-play">
-				<div class="ear-treatment__tringle"></div>
+			<div class="ear-treatment__video-information">
+				<video class="ear-treatment__video" width="450px" height="400px" controls="controls" poster="images/ear-treatment/dog-treatment.png">
+					<source src="videos/catclip2.mp4">
+				</video>
+				<div class="ear-treatment__button-play">
+					<div class="ear-treatment__tringle"></div>
+				</div>
+				<div class="ear-treatment__bloсk"></div>
 			</div>
-			<div class="ear-treatment__bloсk"></div>
 			<div class="ear-treatment__text-information">
 				<p class="ear-treatment__title">
 					<b>
@@ -156,13 +158,11 @@
 					suffered alteration in some form, by<br>
 					humour randomised words
 				</p>
-				<div class="ear-treatment__link">
-					<a class="ear-treatment__Our-Service" href="https://vk.com/user124578">Our Service</a>
-				</div>
+				<a class="ear-treatment__Our-Service" href="#">Our Service</a>
 			</div>
 		</div>
 	</section>
-	<section id="#buying-dog" class="buying-dog">
+	<section id="buying-dog" class="buying-dog">
 		<div class="container">
 			<div class="buying-dog__text-information">
 				<p class="buying-dog__title">
@@ -206,7 +206,7 @@
  			</div>
 		</div>
 	</section>
-	<section id="#vetcare-team" class="vetcare-team">
+	<section id="vetcare-team" class="vetcare-team">
 		<div class="container">
 			<div class="vetcare-team__text">
 				<p class="vetcare-team__title">
@@ -232,71 +232,67 @@
 					</p>
 					<div class="vetcare-team__social-networks">
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/instagram.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/instagram.svg">
 						</button>
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/facebook.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/facebook.svg">
 						</button>
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/twitter.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/twitter.svg">
 						</button>
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/call.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/call.svg">
 						</button>
 					</div>
 				</div>
 				<div class="vetcare-team__signature-information">
 					<p class="vetcare-team__signature-title">
-						<b>
-							Sheeren Collins
-						</b>
+						<b>Sheeren Collins</b>
 					</p>
 					<p class="vetcare-team__signature-subtitle">
 						Administration
 					</p>
 					<div class="vetcare-team__social-networks">
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/instagram.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/instagram.svg">
 						</button>
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/facebook.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/facebook.svg">
 						</button>
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/twitter.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/twitter.svg">
 						</button>
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/call.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/call.svg">
 						</button>
 					</div>
 				</div>
 				<div class="vetcare-team__signature-information">
 					<p class="vetcare-team__signature-title">
-						<b>
-							Jennifer Mullen
-						</b>
+						<b>Jennifer Mullen</b>
 					</p>
 					<p class="vetcare-team__signature-subtitle">
 						Veteritary
 					</p>
 					<div class="vetcare-team__social-networks">
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/instagram.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/instagram.svg">
 						</button>
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/facebook.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/facebook.svg">
 						</button>
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/twitter.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/twitter.svg">
 						</button>
 						<button class="vetcare-team__social-network">
-							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/call.png">
+							<img class="vetcare-team__social-network-icon" src="images/vetcare-team/call.svg">
 						</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="#all-time-information" class="all-time-information">
+	<section id="all-time-information" class="all-time-information">
 		<div class="container">
 			<div class="all-time-information__icon">
 				<div class="all-time-information__text">
@@ -328,76 +324,97 @@
 				</div>
 		</div>
 	</section>
-	<section id="Recent-posts" class="Recent-posts">
+	<section id="recent-posts" class="recent-posts">
 		<div class="container">
-			<div class="Recent-posts__text">
-				<p class="Recent-posts__title"><b>Recent Posts</b></p>
-				<p class="Recent-posts__subtitle">
+			<div class="recent-posts__text">
+				<p class="recent-posts__title"><b>Recent Posts</b></p>
+				<p class="recent-posts__subtitle">
 					Lorem Ipsum available, but the majority have <br>
  					suffered alteration in some form.
 				</p>
 			</div>
-			<div class="Recent-posts__image-information">
-				<img class="Recent-posts__image" src="images/Recent-posts/image-one.png">
-				<img class="Recent-posts__image" src="images/Recent-posts/image-two.png">
-				<img class="Recent-posts__image" src="images/Recent-posts/image-three.png">
+			<div class="recent-posts__image-information">
+				<img class="recent-posts__image" src="images/recent-posts/image-one.png">
+				<img class="recent-posts__image" src="images/recent-posts/image-two.png">
+				<img class="recent-posts__image" src="images/recent-posts/image-three.png">
 			</div>
-			<div class="Recent-posts__information">
-				<div class="Recent-posts__information-text">
-					<p class="Recent-posts__signature">
+			<div class="recent-posts__information">
+				<div class="recent-posts__information-text">
+					<p class="recent-posts__signature">
 						<b>
 							As a veterinarian and <br>
 							lover of animals
 						</b>
 					</p>
-					<p class="Recent-posts__date">February 09, 2020</p>
-					<p class="Recent-posts__signature-subtitle">
+					<p class="recent-posts__date">February 09, 2020</p>
+					<p class="recent-posts__signature-subtitle">
 						Lorem Ipsum available, but the majo <br>
 						rity have suffered alteration in some <br>
 						words which look.
 					</p>
-					<div class="Recent-posts__link-animation">
-						<a class="Recent-posts__link" href="https://ru.wikipedia.org/wiki/Заглавная_страница">
-							<b>Read More<b class="Recent-posts__plus">+</b></b>
-						</a>
+					<div class="recent-posts__link">
+						<div class="recent-posts__link-nonanimation">
+							<a class="recent-posts__link" href="#">
+								Read More
+							</a>
+						</div>
+						<div class="recent-posts__link-animation">
+							<a class="recent-posts__plus" href="#">
+								+
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="Recent-posts__information-text">
-					<p class="Recent-posts__signature">
+				<div class="recent-posts__information-text">
+					<p class="recent-posts__signature">
 						<b>
 							As a veterinarian and <br>
 							lover of animals
 						</b>
 					</p>
-					<p class="Recent-posts__date">February 10, 2020</p>
-					<p class="Recent-posts__signature-subtitle">
+					<p class="recent-posts__date">February 10, 2020</p>
+					<p class="recent-posts__signature-subtitle">
 						Lorem Ipsum available, but the majo <br>
 						rity have suffered alteration in some <br>
 						words which look.
 					</p>
-					<div class="Recent-posts__link-animation">
-						<a class="Recent-posts__link" href="https://ru.wikipedia.org/wiki/Заглавная_страница">
-							<b>Read More<b class="Recent-posts__plus">+</b></b>
-						</a>
+					<div class="recent-posts__link">
+						<div class="recent-posts__link-nonanimation">
+							<a class="recent-posts__link" href="#">
+								Read More
+							</a>
+						</div>
+						<div class="recent-posts__link-animation">
+							<a class="recent-posts__plus" href="#">
+								+
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="Recent-posts__information-text">
-					<p class="Recent-posts__signature">
+				<div class="recent-posts__information-text">
+					<p class="recent-posts__signature">
 						<b>
 							As a veterinarian and <br>
 							lover of animals
 						</b>
 					</p>
-					<p class="Recent-posts__date">February 11, 2020</p>
-					<p class="Recent-posts__signature-subtitle">
+					<p class="recent-posts__date">February 11, 2020</p>
+					<p class="recent-posts__signature-subtitle">
 						Lorem Ipsum available, but the majo <br>
 						rity have suffered alteration in some <br>
 						words which look.
 					</p>
-					<div class="Recent-posts__link-animation">
-						<a class="Recent-posts__link" href="https://ru.wikipedia.org/wiki/Заглавная_страница">
-							<b>Read More<b class="Recent-posts__plus">+</b></b>
-						</a>
+					<div class="recent-posts__link">
+						<div class="recent-posts__link-nonanimation">
+							<a class="recent-posts__link" href="#">
+								Read More
+							</a>
+						</div>
+						<div class="recent-posts__link-animation">
+							<a class="recent-posts__plus" href="#">
+								+
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -407,19 +424,19 @@
 		<div class="container">
 			<div class="footer__column">
 				<a class="footer__About" href="https://otvet.mail.ru/question/79574023">About</a>
-				<a class="footer__subtitle" href="https://otvet.mail.ru/question/79574023">History</a>
-				<a class="footer__subtitle" href="https://otvet.mail.ru/question/79574023">Our team</a>
-				<a class="footer__subtitle" href="https://otvet.mail.ru/question/79574023">Brand Guidelines</a>
-				<a class="footer__subtitle" href="https://otvet.mail.ru/question/79574023">Terms & Condition</a>
-				<a class="footer__subtitle" href="https://otvet.mail.ru/question/79574023">Privacy Policy</a>
+				<a class="footer__subtitle" href="#">History</a>
+				<a class="footer__subtitle" href="#">Our team</a>
+				<a class="footer__subtitle" href="#">Brand Guidelines</a>
+				<a class="footer__subtitle" href="#">Terms & Condition</a>
+				<a class="footer__subtitle" href="#">Privacy Policy</a>
 			</div>
 			<div class="footer__column">
-				<a class="footer__Services" href="https://otvet.mail.ru/question/79574023">Services</a>
-				<a class="footer__subtitle" href="https://otvet.mail.ru/question/79574023">How to Order</a>
-				<a class="footer__subtitle" href="https://otvet.mail.ru/question/79574023">Our Product</a>
-				<a class="footer__subtitle" href="https://otvet.mail.ru/question/79574023">Order Status</a>
-				<a class="footer__subtitle" href="https://otvet.mail.ru/question/79574023">Promo</a>
-				<a class="footer__subtitle" href="https://otvet.mail.ru/question/79574023">Payment Method</a>
+				<a class="footer__Services" href="#">Services</a>
+				<a class="footer__subtitle" href="#">How to Order</a>
+				<a class="footer__subtitle" href="#">Our Product</a>
+				<a class="footer__subtitle" href="#">Order Status</a>
+				<a class="footer__subtitle" href="#">Promo</a>
+				<a class="footer__subtitle" href="#">Payment Method</a>
 			</div>
 			<div class="footer__search-information">
 				<p class="footer__title-search"><b>Title Here</b></p>
@@ -427,21 +444,21 @@
 				<form class="footer__form">
 					<input class="footer__input" type="text" placeholder="Search...">
 					<button class="footer__button-form" class="footer__button">
-						<img class="footer__img" src="images/footer/telegramm.png">
+						<img class="footer__img" src="images/footer/telegram.svg">
 					</button>
 				</form>
 				<div class="footer__Services-button">
 					<button class="footer__button-social-network">
-						<img class="footer__search-image" src="images/footer/instagram.png">
+						<img class="footer__search-image" src="images/footer/instagram.svg">
 					</button>
 					<button class="footer__button-social-network">
-						<img class="footer__search-image" src="images/footer/facebook.png">
+						<img class="footer__search-image" src="images/footer/facebook.svg">
 					</button>
 					<button class="footer__button-social-network">
-						<img class="footer__search-image" src="images/footer/twitter.png">
+						<img class="footer__search-image" src="images/footer/twitter.svg">
 					</button>
 					<button class="footer__button-social-network">
-						<img class="footer__search-image" src="images/footer/call.png">
+						<img class="footer__search-image" src="images/footer/call.svg">
 					</button>
 				</div>
 			</div>

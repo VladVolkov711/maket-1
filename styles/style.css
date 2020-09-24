@@ -12,6 +12,7 @@ body {
 
 button {
 	border: 0;
+	cursor: pointer;
 }
 
 .body {
@@ -35,6 +36,10 @@ button {
 	height: 100px;
 }
 
+.img {
+	width: 190px;
+}
+
 .menu {
 	display: flex;
 	justify-content: space-between;
@@ -55,7 +60,6 @@ button {
 
 .search .nav__form , .nav__button {
 	display: flex;
-	box-shadow: 5px 15px 7px rgba(122,122,122,0.2);
 }
 
 .search .nav__input {
@@ -68,11 +72,14 @@ button {
 }
 
 .nav__button{
-	display: block;
 	background-color: #00ccff;
 	width: 60px;
-	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
 
+.nav__search-img {
+	margin: auto;
 }
 
 .menu__link {
@@ -113,7 +120,8 @@ button {
 }
 
 .home__link {
-	height: 50%
+	height: 50%;
+
 }
 
 .home__text-first {
@@ -136,6 +144,14 @@ button {
 	margin-right: 40px;
 }
 
+.home__button:active {
+	text-decoration: initial;
+	color: white;
+	border-radius: 7px;
+	padding: 20px;
+	margin-right: 40px;
+}
+
 .home__button-contact-us {
 	background-color: #00ccff;
 	border: 2px solid #00ccff;
@@ -145,6 +161,7 @@ button {
 	background-color: #14BEC8;
 	border: 2px solid;
 	border-color: #16A8B1;
+	color: #FFD853;
 }
 
 .home__button-our-services {
@@ -154,6 +171,7 @@ button {
 .home__button-our-services:hover {
 	background-color: #FFD853;
 	border:1px solid white;
+	color: #00ccff;
 }
 
 /*             group_2            */
@@ -171,7 +189,7 @@ button {
 
 .veterinar-informaton__text {
 	height: 300px;
-	z-index: 2;
+	z-index: 3;
 }
 
 .veterinar-informaton__title {
@@ -201,30 +219,40 @@ button {
 	border-radius: 7px;
 	text-decoration: initial;
 	padding: 15px;
-	color: white;
+	color: #00ccff;
+}
+
+.veterinar-informaton__button:active {
+	background-color: #FCC302;
+	border-radius: 7px;
+	text-decoration: initial;
+	padding: 20px;
+	color: #00ccff;
 }
 
 .veterinar-informaton__video {
 	z-index: 2;
+	position: relative;
 }
 
-.veterinar-informaton__videoclip-dog {
+.veterinar-informaton__videoclip-dog  {
 	object-fit: fill;
+	z-index: 2;
 }
 
 .veterinar-informaton__button-play{
-	background-color: white;
+	background-color: #FFF8DC;
 	border-radius: 50%;
 	width: 70px;
 	height: 70px;
 	position: absolute;
-	top: 1100px;
-	left: 965px;
-	z-index: 4;
+	top: 46%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .veterinar-informaton__button-play:hover {
-	display: none;
+	background-color: #FFFFFF;
 }
 
 .veterinar-informaton__tringle{
@@ -233,8 +261,8 @@ button {
 	height: 30px;
 	pointer-events: none;
 	position: absolute;
-	top: 20px;
-	left: 25px;
+	top: 30%;
+	left: 35%;
 	clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
@@ -243,9 +271,8 @@ button {
 	width: 240px;
 	height: 200px;
 	position: absolute;
-	left: 750px;
-	top: 1170px;
-	z-index: 1;
+	transform: translate(-10%,-90%);
+	z-index: -1;
 }
 
 /*             group_3            */
@@ -312,6 +339,11 @@ button {
 	height: 700px;
 }
 
+.ear-treatment__video-information {
+	position: relative;
+
+}
+
 .ear-treatment__video {
 	object-fit: fill;
 	z-index: 2;
@@ -328,31 +360,47 @@ button {
 	font-size: 30px;
 }
 
-.ear-treatment__link {
+.ear-treatment__Our-Service {
 	background-color: #FCC302;
 	border-radius: 7px;
 	float: right;
 	padding: 15px;
-}
-
-.ear-treatment__Our-Service {
 	text-decoration: initial;
 	color: white;
 }
 
+.ear-treatment__Our-Service:hover {
+	background-color: #FFA500;
+	border-radius: 7px;
+	float: right;
+	padding: 15px;
+	text-decoration: initial;
+	color: #00ccff;
+}
+
+.ear-treatment__Our-Service:active {
+	background-color: #FCC302;
+	border-radius: 7px;
+	float: right;
+	padding: 20px;
+	text-decoration: initial;
+	color: #00ccff;
+}
+
 .ear-treatment__button-play {
-	background-color: white;
+	background-color: #FFF8DC;
 	border-radius: 50%;
 	width: 70px;
 	height: 70px;
 	position: absolute;
-	left: 315px;
-	top: 2703px;
-	z-index: 3;
+	left: 34%;
+	top: 46%;
+	transform: translate(50%, -50%);
+	z-index: 2;
 }
 
 .ear-treatment__button-play:hover {
-	display: none;
+	background-color: #FFFFFF;
 }
 
 .ear-treatment__tringle {
@@ -371,8 +419,10 @@ button {
 	width: 250px;
 	height: 180px;
 	position: absolute;
-	left: 350px;
-	top: 2800px;
+	left: 50%;
+	top: 39%;
+	transform: translate(0,50%);
+	z-index: -1;
 }
 
 /*             group_5            */
@@ -427,6 +477,7 @@ button {
 	font-size: 35px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	position: relative;
 }
 
 .buying-dog__sale {
@@ -437,24 +488,27 @@ button {
 	border: 2px solid #29271a;
 	width: 70px;
 	position: absolute;
-	top: 3825px;
-	left: 225px;
+	top: 50%;
+	left: 45%;
+	transform: translate(-100%);
 }
 
 .buying-dog__trait40 {
 	border: 2px solid #29271a;
 	width: 70px;
 	position: absolute;
-	top: 3825px;
-	left: 592px;
+	top: 50%;
+	left: 45%;
+	transform: translate(-100%);
 }
 
 .buying-dog__trait45 {
 	border: 2px solid #29271a;
 	width: 70px;
 	position: absolute;
-	top: 3825px;
-	left: 960px;
+	top: 50%;
+	left: 45%;
+	transform: translate(-100%);
 }
 
 .buying-dog__cost-sale {
@@ -472,6 +526,28 @@ button {
 	padding-bottom: 8px;
 	padding-right: 30px;
 	padding-left: 30px;
+}
+
+.buying-dog__button:hover {
+	background-color: #6495ED;
+	border-radius: 60px;
+	color: white;
+	font-size: 17px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.buying-dog__button:active {
+	background-color: #00BEC9;
+	border-radius: 60px;
+	color: white;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 32px;
+	padding-left: 32px;
 }
 
 /*             group_6            */
@@ -549,6 +625,12 @@ button {
 	height: 25px;
 }
 
+.vetcare-team__social-network-icon:active {
+	margin-top: 3px;
+	width: 28px;
+	height: 28px;
+}
+
 /*             group_7            */
 
 .all-time-information {
@@ -579,76 +661,104 @@ button {
 
 /*             group_8            */
 
-.Recent-posts {
+.recent-posts {
 	background-color: white;
 	height: 960px;
 }
 
-.Recent-posts__title {
+.recent-posts__title {
 	text-align: center;
 	font-size: 60px;
 	margin-bottom: 0px;
 }
 
-.Recent-posts__subtitle {
+.recent-posts__subtitle {
 	text-align: center;
 	font-size: 30px;
 	margin-top: 10px;
 }
 
-.Recent-posts__image-information {
+.recent-posts__image-information {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 70px;
 }
 
-.Recent-posts__image {
+.recent-posts__image {
 	width: 350px;
 	height: 350px;
 }
 
-.Recent-posts__information {
+.recent-posts__information {
 	display: flex;
 	justify-content: space-around;
 }
 
-.Recent-posts__signature {
+.recent-posts__signature {
 	font-size: 25px;
 }
 
-.Recent-posts__date {
+.recent-posts__date {
 	color: #00BEC9;
 }
 
-.Recent-posts__signature-subtitle {
+.recent-posts__signature-subtitle {
 	font-size: 15px;
 }
 
-.Recent-posts__date {
+.recent-posts__date {
 	text-transform: uppercase;
 }
 
-.Recent-posts__link-anim {
+.recent-posts__link {
 	display: flex;
-}
-
-.Recent-posts__animation {
 	text-decoration: initial;
 	color: #00BEC9;
 	font-size: 20px;
 }
 
-.Recent-posts__link {
-	text-decoration: initial;
+.recent-posts__link:hover {
+	animation-name: textanim;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+
+.recent-posts__link-nonanimation {
 	color: #00BEC9;
 	font-size: 20px;
 }
 
-.Recent-posts__link:hover .Recent-posts__plus {
+.recent-posts__plus {
 	text-decoration: initial;
 	color: #00BEC9;
 	font-size: 20px;
 	margin-left: 10px;
+}
+
+.recent-posts__link:hover .recent-posts__link-animation {
+	animation-name: plusanim;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+
+@keyframes plusanim {
+	0%{
+		transform: scale(0,0);
+	}
+
+	100%{
+		transform: scale(1.5,1.5);
+	}
+}
+
+@keyframes textanim {
+	0%{
+		font-size: 20px;
+	}
+
+	100%{
+		font-size: 22px;
+	}
 }
 
 /*             group_9(footer)            */
@@ -735,6 +845,7 @@ button {
 .footer__form {
 	height: 60px;
 	display: flex;
+	color: white;
 }
 
 .footer__input {
@@ -743,6 +854,11 @@ button {
 	border: 0;
 	background-color: #DAAC00;
 	margin-left: 100px;
+	padding-left: 20px;
+}
+
+.footer__input::placeholder {
+	color: white;
 }
 
 .footer__button-form {
@@ -769,6 +885,13 @@ button {
 }
 
 .footer__search-image {
+	margin-top: 3px;
 	height: 15px;
 	width: 15px;
+}
+
+.footer__search-image:active {
+	margin-top: 3px;
+	height: 16px;
+	width: 16px;
 }
