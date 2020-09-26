@@ -1,7 +1,5 @@
 /*             group_1            */
-
 @font-face {
-
 	font-family: Poppins;
 	src: url(../fonts/Poppins.ttf);
 }
@@ -25,8 +23,8 @@ button {
 
 .container {
 	max-width: 1100px;
+	width: 90%;
 	margin: auto;
-	z-index: 2;
 }
 
 .nav .container {
@@ -92,6 +90,8 @@ button {
 	color: #0F3D38;
 }
 
+/*             group_2            */
+
 .home {
 	background-color: #fcc302;
 }
@@ -106,7 +106,6 @@ button {
 
 .home__information {
 	display: flex;
-	justify-content: space-between;
 	flex-direction: column;
 	height: 480px;
 }
@@ -149,7 +148,6 @@ button {
 	color: white;
 	border-radius: 7px;
 	padding: 20px;
-	margin-right: 40px;
 }
 
 .home__button-contact-us {
@@ -174,7 +172,7 @@ button {
 	color: #00ccff;
 }
 
-/*             group_2            */
+/*             group_3            */
 
 .veterinar-informaton {
 	background-color: white;
@@ -238,6 +236,8 @@ button {
 .veterinar-informaton__videoclip-dog  {
 	object-fit: fill;
 	z-index: 2;
+	height: 400px; 
+	width: 450px;
 }
 
 .veterinar-informaton__button-play{
@@ -275,7 +275,7 @@ button {
 	z-index: -1;
 }
 
-/*             group_3            */
+/*             group_4            */
 
 .postures-for-treatment {
 	background-color: #fcc302;
@@ -330,7 +330,7 @@ button {
 	font-size: 20px;
 }
 
-/*             group_4            */
+/*             group_5            */
 
 .ear-treatment .container {
 	display: flex;
@@ -347,6 +347,8 @@ button {
 .ear-treatment__video {
 	object-fit: fill;
 	z-index: 2;
+	width: 450px;
+	height: 400px;
 }
 
 .ear-treatment__title {
@@ -425,7 +427,7 @@ button {
 	z-index: -1;
 }
 
-/*             group_5            */
+/*             group_6            */
 
 .buying-dog {
 	background-color: #FCC302;
@@ -461,20 +463,21 @@ button {
 .buying-dog__cost-information {
 	display: flex;
 	flex-direction: column;
-	align-items: center;	
+	margin-left: 35px;
+	margin-right: 35px;	
+	font-size: 35px;
 }
 
 .buying-dog__cost {
 	display: flex;
-	justify-content: space-around;
-	height: 10%;
+	justify-content: space-between;
 }
 
 .buying-dog__money {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-items: center;
 	color: white;
-	font-size: 35px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	position: relative;
@@ -550,7 +553,7 @@ button {
 	padding-left: 32px;
 }
 
-/*             group_6            */
+/*             group_7            */
 
 .vetcare-team {
 	background-color: white;
@@ -577,8 +580,7 @@ button {
 
 .vetcare-team__image {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-around;
 	margin-top: 40px;
 }
 
@@ -631,7 +633,7 @@ button {
 	height: 28px;
 }
 
-/*             group_7            */
+/*             group_8            */
 
 .all-time-information {
 	background: url(../images/all-time-information/man-with-dog.png);
@@ -659,7 +661,7 @@ button {
 	margin-top: 50px;
 }
 
-/*             group_8            */
+/*             group_9            */
 
 .recent-posts {
 	background-color: white;
@@ -691,7 +693,9 @@ button {
 
 .recent-posts__information {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .recent-posts__signature {
@@ -717,12 +721,6 @@ button {
 	font-size: 20px;
 }
 
-.recent-posts__link:hover {
-	animation-name: textanim;
-	animation-duration: 1s;
-	animation-iteration-count: 1;
-}
-
 .recent-posts__link-nonanimation {
 	color: #00BEC9;
 	font-size: 20px;
@@ -732,36 +730,15 @@ button {
 	text-decoration: initial;
 	color: #00BEC9;
 	font-size: 20px;
-	margin-left: 10px;
+	margin-left: 5px;
+	opacity: 0;
 }
 
-.recent-posts__link:hover .recent-posts__link-animation {
-	animation-name: plusanim;
-	animation-duration: 1s;
-	animation-iteration-count: 1;
+.recent-posts__link:hover .recent-posts__plus {
+	opacity: 1;
 }
 
-@keyframes plusanim {
-	0%{
-		transform: scale(0,0);
-	}
-
-	100%{
-		transform: scale(1.5,1.5);
-	}
-}
-
-@keyframes textanim {
-	0%{
-		font-size: 20px;
-	}
-
-	100%{
-		font-size: 22px;
-	}
-}
-
-/*             group_9(footer)            */
+/*             group_10(footer)            */
 
 .footer {
 	background-color: #343434;
@@ -846,6 +823,7 @@ button {
 	height: 60px;
 	display: flex;
 	color: white;
+	margin-left: 80px;
 }
 
 .footer__input {
@@ -853,7 +831,6 @@ button {
 	width: 350px;
 	border: 0;
 	background-color: #DAAC00;
-	margin-left: 100px;
 	padding-left: 20px;
 }
 
@@ -894,4 +871,423 @@ button {
 	margin-top: 3px;
 	height: 16px;
 	width: 16px;
+}
+
+/*             MEDIA            */
+
+@media (max-width: 1100px) {
+	/*             MEDIA-group_1            */
+
+	.img {
+		width: 110px;
+		height: 40px;
+	}
+
+	.menu__link {
+		font-size: 18px;
+	}
+
+	/*             MEDIA-group_2            */
+
+	.home .container {
+		height: 500px;
+	}
+
+	.home__information {
+		height: 300px;
+	}
+
+	.home__text-first {
+		font-size: 40px;
+	}
+
+	.home__text-lorem {
+		font-size: 15px;
+	}
+
+	.home__button {
+		padding: 5px;
+		margin-right: 20px;
+	}
+
+	.home__button:active {
+		padding: 8px;
+	}
+
+	.home__img {
+		width: 300px;
+		height: 450px;
+	}
+
+	/*             MEDIA-group_3            */
+
+	.veterinar-informaton .container {
+		height: 500px;
+	}
+
+	.veterinar-informaton__text {
+		height: 200px;
+	}
+
+	.veterinar-informaton__title {
+		font-size: 35px;
+	}
+
+	.veterinar-informaton__subtitle {
+		font-size: 15px;
+	}
+
+	.veterinar-informaton__button {
+		padding: 8px;
+	}
+
+	.veterinar-informaton__button:hover {
+		padding: 10px;
+	}
+
+	.veterinar-informaton__button:active {
+		padding: 12px;
+	}
+
+	.veterinar-informaton__videoclip-dog  {
+		width: 300px;
+		height: 280px;
+	}
+
+	.veterinar-informaton__button-play{
+		width: 50px;
+		height: 50px;
+	}
+
+	.veterinar-informaton__tringle{
+		width: 20px;
+		height: 20px;
+	}
+
+	.veterinar-informaton__bloсk {
+		width: 160px;
+		height: 140px;
+	}
+
+	/*             MEDIA-group_4            */
+
+	.postures-for-treatment {
+		height: 570px;
+	}
+
+	.postures-for-treatment__title {
+		font-size: 30px;
+	}
+
+	.postures-for-treatment__subtitle {
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+
+	.postures-for-treatment__img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.postures-for-treatment__signature-title {
+		font-size: 20px;
+	}
+
+	.postures-for-treatment__signature-subtitle {
+		font-size: 15px;
+	}
+
+	/*             MEDIA-group_5            */
+
+	.ear-treatment .container {
+		height: 500px;
+	}
+
+	.ear-treatment__video {
+		width: 300px;
+		height: 280px;
+	}
+
+	.ear-treatment__title {
+		font-size: 35px;
+		height: 90px;
+	}
+
+	.ear-treatment__subtitle {
+		font-size: 15px;
+	}
+
+	.ear-treatment__Our-Service {
+		padding: 8px;
+	}
+
+	.ear-treatment__Our-Service:hover {
+		padding: 12px;
+	}
+
+	.ear-treatment__Our-Service:active {
+		padding: 15px;
+	}
+
+	.ear-treatment__button-play {
+		width: 50px;
+		height: 50px;
+	}
+
+	.ear-treatment__tringle {
+		width: 20px;
+		height: 20px;
+		left: 18px;
+		top: 17px;
+	}
+
+	.ear-treatment__bloсk {
+		width: 150px;
+		height: 110px;
+	}
+
+	/*             MEDIA-group_6            */
+
+	.buying-dog {
+		height: 530px;
+	}
+
+	.buying-dog__title {
+		font-size: 30px;
+	}
+
+	.buying-dog__subtitle {
+		font-size: 20px;
+		margin-top: 10px; 	
+	}
+
+	.buying-dog__img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.buying-dog__money {
+		font-size: 25px;
+	}
+
+	.buying-dog__trait50 {
+		width: 55px;
+	}
+
+	.buying-dog__trait40 {
+		width: 55px;
+	}
+
+	.buying-dog__trait45 {
+		width: 55px;
+	}
+
+	.buying-dog__button {
+		font-size: 13px;
+	}
+
+	.buying-dog__button:hover {
+		font-size: 15px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.buying-dog__button:active {
+		font-size: 15px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	/*             MEDIA-group_7            */
+
+	.vetcare-team {
+		height: 620px;
+	}
+
+	.vetcare-team__title {
+		font-size: 30px;
+		margin-top: 40px;
+	}
+
+	.vetcare-team__subtitle {
+		font-size: 25px;
+	}
+
+	.vetcare-team__image {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 20px;
+	}
+
+	.vetcare-team__image-size {
+		width: 200px;
+		height: 200px;
+	}
+
+	.vetcare-team__signature-title {
+		font-size: 20px;
+	}
+
+	.vetcare-team__signature-subtitle {
+		font-size: 13px;
+	}
+
+	.vetcare-team__social-network {
+		width: 30px;
+		height: 30px;
+	}
+
+	.vetcare-team__social-network-icon {
+		width: 15px;
+		height: 15px;
+	}
+
+	.vetcare-team__social-network-icon:active {
+		width: 18px;
+		height: 18px;
+	}
+
+	/*             MEDIA-group_8            */
+
+	.all-time-information {
+	height: 350px;
+	}
+
+	.all-time-information__icon {
+		height: 350px;
+	}
+
+	.all-time-information__title {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	/*             MEDIA-group_9            */
+
+	.recent-posts {
+		height: 620px;
+	}
+
+	.recent-posts__title {
+		font-size: 30px;
+	}
+
+	.recent-posts__subtitle {
+		font-size: 20px;
+	}
+
+	.recent-posts__image-information {
+		margin-top: 50px;
+	}
+
+	.recent-posts__image {
+		width: 200px;
+		height: 200px;
+	}
+
+	.recent-posts__signature {
+		font-size: 15px;
+	}
+
+	.recent-posts__signature-subtitle {
+		font-size: 10px;
+	}
+
+	.recent-posts__link {
+		font-size: 15px;
+	}
+
+	.recent-posts__link-nonanimation {
+		font-size: 15px;
+	}
+
+	.recent-posts__plus {
+		font-size: 15px;
+	}
+
+	/*             MEDIA-group_10(footer)            */
+
+	.footer .container {
+		height: 300px;
+	}
+
+	.footer__About {
+		font-size: 20px;
+	}
+
+	.footer__About:hover {
+		font-size: 25px;
+	}
+
+	.footer__Services {
+		font-size: 20px;
+	}
+
+	.footer__Services:hover {
+		font-size: 25px;
+	}
+
+	.footer__subtitle {
+		font-size: 15px;
+	}
+
+	.footer__subtitle:hover {
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+
+	.footer__search-information {
+		width: 300px;
+		height: 200px;
+	}
+
+	.footer__title-search {
+		font-size: 25px;
+	}
+
+	.footer__subtitle-search {
+		font-size: 15px;
+	}
+
+	.footer__form {
+		height: 60px;
+	}
+
+	.footer__input {
+		height: 38px;
+		width: 200px;
+	}
+
+	.footer__button-form {
+		height: 40px;
+		width: 100px;
+	}
+
+	.footer__img {
+		width: 15px;
+		height: 15px;
+	}
+
+	.footer__Services-button {
+		margin-left: 150px;
+	}
+
+	.footer__button-social-network {
+		width: 25px;
+		height: 25px;
+	}
+
+	.footer__search-image {
+		height: 12px;
+		width: 12px;
+	}
+
+	.footer__search-image:active {
+		height: 15px;
+		width: 15px;
+	}
 }
