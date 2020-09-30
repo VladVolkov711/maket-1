@@ -38,6 +38,14 @@ button {
 	width: 190px;
 }
 
+.img-logo-mobile {
+	display: none;
+}
+
+.wrapper {
+	display: none;
+}
+
 .menu {
 	display: flex;
 	justify-content: space-between;
@@ -156,10 +164,8 @@ button {
 }
 
 .home__button-contact-us:hover {
-	background-color: #14BEC8;
-	border: 2px solid;
-	border-color: #16A8B1;
-	color: #FFD853;
+	background-color: #6495ed;
+	border: 2px solid #6495ed;
 }
 
 .home__button-our-services {
@@ -168,8 +174,16 @@ button {
 
 .home__button-our-services:hover {
 	background-color: #FFD853;
-	border:1px solid white;
+	border:1px solid #00ccff;
 	color: #00ccff;
+}
+
+.home__link-media {
+	display: none;
+}
+
+.home__subtitle-media {
+	display: none;
 }
 
 /*             group_3            */
@@ -307,6 +321,11 @@ button {
 	justify-content: space-between;
 }
 
+.postures-for-treatment__img {
+	width: 300px;
+	height: 300px;
+}
+
 .postures-for-treatment__image-information-text {
 	color: white;
 	display: flex;
@@ -317,6 +336,8 @@ button {
 
 .postures-for-treatment__signature {
 	height: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .postures-for-treatment__signature-title {
@@ -328,6 +349,10 @@ button {
 .postures-for-treatment__signature-subtitle {
 	text-align: center;
 	font-size: 20px;
+}
+
+.postures-for-treatment__block-information-meta {
+	display: none;
 }
 
 /*             group_5            */
@@ -463,8 +488,8 @@ button {
 .buying-dog__cost-information {
 	display: flex;
 	flex-direction: column;
-	margin-left: 35px;
-	margin-right: 35px;	
+	margin-left: 90px;
+	margin-right: 90px;	
 	font-size: 35px;
 }
 
@@ -553,6 +578,10 @@ button {
 	padding-left: 32px;
 }
 
+.buying-dog__image {
+	display: none;
+}
+
 /*             group_7            */
 
 .vetcare-team {
@@ -631,6 +660,10 @@ button {
 	margin-top: 3px;
 	width: 28px;
 	height: 28px;
+}
+
+.vetcare-team__media-mobile {
+	display: none;
 }
 
 /*             group_8            */
@@ -736,6 +769,10 @@ button {
 
 .recent-posts__link:hover .recent-posts__plus {
 	opacity: 1;
+}
+
+.recent-posts__block-information-meta-mobile {
+	display: none;
 }
 
 /*             group_10(footer)            */
@@ -873,6 +910,10 @@ button {
 	width: 16px;
 }
 
+.footer__column-meta-mobile {
+	display: none;
+}
+
 /*             MEDIA            */
 
 @media (max-width: 1100px) {
@@ -884,7 +925,7 @@ button {
 	}
 
 	.menu__link {
-		font-size: 18px;
+		font-size: 15px;
 	}
 
 	/*             MEDIA-group_2            */
@@ -989,6 +1030,11 @@ button {
 		height: 200px;
 	}
 
+	.postures-for-treatment__signature {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
 	.postures-for-treatment__signature-title {
 		font-size: 20px;
 	}
@@ -1068,6 +1114,11 @@ button {
 
 	.buying-dog__money {
 		font-size: 25px;
+	}
+
+	.buying-dog__cost-information {
+		margin-left: 35px;
+		margin-right: 35px;
 	}
 
 	.buying-dog__trait50 {
@@ -1289,5 +1340,825 @@ button {
 	.footer__search-image:active {
 		height: 15px;
 		width: 15px;
+	}
+}
+
+/*             MEDIA-mobile            */
+
+@media (max-width: 450px) {
+/*             MEDIA-mobile-group_1            */
+
+	.nav {
+		position: fixed;
+		width: 100%;
+		z-index: 10;
+	}
+
+	.nav .container {
+		height: 80px;
+	}
+	
+	.img {
+		display: none;
+	}
+
+	.img-logo-mobile {
+		width: 40px;
+		height: 40px;
+		display: block;
+	}
+
+	.wrapper {
+		display: block;
+	    width: 55px;
+	    background-color: orange;
+	    position: relative;
+	    text-align: center;
+	    height: 40px;
+	}
+
+	#check-menu {
+	    display: none;
+	}
+
+	.nav__lable {
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    cursor: pointer;
+	    z-index: 2;
+	    line-height: 40px;
+	}
+
+	.nav-line {
+	    position: absolute;
+	    top: 8px;
+	    right: 10px;
+	    width: 35px;
+	    height: 2px;
+	    background-color: #fff;
+	    transition: 0.5s all;
+	}
+
+	.second, .third {
+	    top: 18px;
+	}
+
+	.fourth {
+	    top: 28px;
+	}
+
+	.main-menu{
+	    display: block;
+	    position: absolute;
+	    width: 100px;
+	    bottom: 0;
+	    right: 0;
+	    transform: translate(16%,100%);
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: 0.5s all;
+	}
+
+	.nav-checkbox__menu {
+	    display: block;
+	    font-size: 20px;
+	    padding: 10px;
+	    color: white;
+	    text-decoration: none;
+	    border-bottom: 1px solid black;
+	    background-color: #daac00;
+	}
+
+	.nav-checkbox__menu:hover {
+	    background-color: orange;
+	}
+
+	#check-menu:checked ~ .main-menu {
+	    max-height: 500px;
+	    font-size: 16px;
+	}
+
+	#check-menu:checked ~ .first {
+	    display: none;
+	}
+
+	#check-menu:checked ~ .second {
+	    transform: rotate(45deg);
+	}
+
+	#check-menu:checked ~ .third {
+	    transform: rotate(-45deg);
+	}
+
+	#check-menu:checked ~ .fourth {
+	    display: none;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.search {
+		width: 140px;
+		height: 60px;
+	}
+
+	.search .nav__form {
+		align-items: center;
+	}
+
+	.search .nav__input {
+		width: 100%;
+		height: 60%;
+		padding-left: 8px;
+	}
+
+	.nav__button{
+		width: 60px;
+		height: 63%;
+	}
+
+	.nav__search-img {
+		margin: auto;
+		width: 15px;
+		height: 15px;
+	}
+
+	.menu__link {
+		color: white;
+		font-size: 10px;
+		text-decoration: initial;
+	}
+
+	/*             MEDIA-mobile-group_2            */
+
+	.home .container {
+		align-items: center;
+		color: white;
+		height: 300px;
+	}
+
+	.home__information {
+		display: flex;
+		flex-direction: column;
+		height: 280px;
+	}
+
+	.home__subtitle-media {
+		display: block;
+		position: absolute;
+		top: 28%;
+	}
+
+	.home__subtitle {
+		display: none;
+	}
+
+	.home__link {
+		display: none;
+	}
+
+	.home__link-media {
+		display: block;
+		position:absolute;
+		left: 15%;
+		top: 45%;
+		height: 20%;
+		margin: auto;
+	}
+
+	.home__text-first {
+		font-size: 20px;
+		margin-top: 100px;
+		margin-bottom: 0px;
+	}
+
+	.home__text-lorem-media {
+		font-size: 10px;
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+
+	.home__button-media {
+		text-decoration: initial;
+		color: white;
+		border-radius: 7px;
+		padding: 5px;
+		margin-right: 30px;
+	}
+
+	.home__button-media:active {
+		text-decoration: initial;
+		color: white;
+		border-radius: 7px;
+		padding: 7px;
+	}
+
+	.home__button-contact-us-media {
+		background-color: #00ccff;
+		border: 2px solid #00ccff;
+	}
+
+	.home__button-contact-us-media:hover {
+		background-color: #6495ed;
+		border: 2px solid #6495ed;
+	}
+
+	.home__button-our-services-media {
+		border:1px solid white;
+	}
+
+	.home__button-our-services-media:hover {
+		background-color: #FFD853;
+		border:1px solid #00ccff;
+		color: #00ccff;
+	}
+
+	.home__dog-img {
+		height: 200px;
+	}
+
+	.home__img {
+		margin-top: 45px;
+		width: 80px;
+		height: 100px;
+	}
+
+	/*             MEDIA-mobile-group_3            */
+
+	.veterinar-informaton .container {
+		display: flex;
+		flex-direction: column;
+		height: 500px;
+	}
+
+	.veterinar-informaton__text {
+		height: 300px;
+		z-index: 3;
+	}
+
+	.veterinar-informaton__title {
+		font-size: 25px;
+		margin-top: 20px;
+		height: 30%;
+		text-align: center;
+	}
+
+	.veterinar-informaton__subtitle {
+		font-size: 15px;
+		height: 30%;
+		text-align: center;
+	}
+
+	.veterinar-informaton__button {
+		padding: 10px;
+		color: white;
+		margin-left: 30%;
+	}
+
+	.veterinar-informaton__video {
+		position: relative;
+		bottom: 10%
+	}
+
+	.veterinar-informaton__videoclip-dog  {
+		height: 200px; 
+		width: 250px;
+	}
+
+	.veterinar-informaton__button-play{
+		width: 50px;
+		height: 50px;
+	}
+
+	.veterinar-informaton__tringle{
+		width: 20px;
+		height: 20px;
+	}
+
+	.veterinar-informaton__bloсk {
+		width: 140px;
+		height: 100px;
+	}
+
+	/*             MEDIA-mobile-group_4            */
+
+	.postures-for-treatment {
+		height: 1100px;
+	}
+
+	.postures-for-treatment__text-information {
+		height: 33%;
+	}
+
+	.postures-for-treatment__title {
+		font-size: 20px;
+		margin-bottom: 0px;
+		height: 5%;
+	}
+
+	.postures-for-treatment__subtitle {
+		text-align: center;
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+
+	.postures-for-treatment__image {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.postures-for-treatment__img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.postures-for-treatment__signature-title {
+		text-align: center;
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.postures-for-treatment__signature-subtitle {
+		text-align: center;
+		font-size: 15px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.postures-for-treatment__block-information {
+		display: none;
+	}
+
+	.postures-for-treatment__block-information-meta {
+		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: white;
+	}
+
+	/*             MEDIA-mobile-group_5            */
+
+	.ear-treatment .container {
+		display: flex;
+		flex-direction: column;
+		height: 500px;
+	}
+
+	.ear-treatment__video {
+		margin-top: 50px;
+		width: 250px;
+		height: 200px;
+	}
+
+	.ear-treatment__text-information {
+		margin-bottom: 40px;
+	}
+
+	.ear-treatment__title {
+		text-align: center;
+		font-size: 20px;
+		height: 60px;
+		margin-top: 0px;
+	}
+
+	.ear-treatment__subtitle {
+		text-align: center;
+		font-size: 10px;
+	}
+
+	.ear-treatment__Our-Service {
+		padding: 10px;
+		color: white;
+		margin-right: 50px;
+		
+	}
+
+	.ear-treatment__Our-Service:hover {
+		padding: 12px;
+	}
+
+	.ear-treatment__Our-Service:active {
+		padding: 12px;
+	}
+
+	.ear-treatment__button-play {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		left: 29%;
+		top: 55%;
+	}
+
+	.ear-treatment__tringle {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		left: 18px;
+		top: 15px;
+	}
+
+	.ear-treatment__bloсk {
+		width: 150px;
+		height: 120px;
+		position: absolute;
+		left: 50%;
+		top: 35%;
+	}
+
+	/*             MEDIA-mobile-group_6            */
+
+	.buying-dog {
+		background-color: #FCC302;
+		height: 1180px;
+	}
+
+	.buying-dog__text-information {
+		display: flex;
+		flex-direction: column;
+		color: white;
+		height: 35%;
+	}
+
+	.buying-dog__title {
+		font-size: 25px;
+	}
+
+	.buying-dog__subtitle {
+		font-size: 10px;
+		margin-top: 10px; 	
+	}
+
+	.buying-dog__meta-mobile {
+		display: block;
+		align-items: center;
+	}
+
+	.buying-dog__image-meta {
+	}
+
+	.buying-dog__img {
+		margin-left: 15%;
+		margin-top: 20px;
+	}
+
+	.buying-dog__cost-information {
+		display: flex;
+		flex-direction: column;
+		margin-left: 90px;
+		margin-right: 90px;	
+		font-size: 35px;
+		margin-top: 0px;
+	}
+
+	.buying-dog__cost {
+		display: none;
+	}
+
+	.buying-dog__money {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+		margin-bottom: 0px;
+		position: relative;
+	}
+
+	.buying-dog__sale {
+		margin-right: 30px;
+	}
+
+	.buying-dog__trait50 {
+		width: 50px;
+	}
+
+	.buying-dog__trait40 {
+		width: 50px;
+	}
+
+	.buying-dog__trait45 {
+		width: 50px;
+	}
+
+	.buying-dog__button {
+		background-color: #00BEC9;
+		border-radius: 60px;
+		color: white;
+		font-size: 11px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.buying-dog__button:hover {
+		background-color: #6495ED;
+		border-radius: 60px;
+		color: white;
+		font-size: 11px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.buying-dog__button:active {
+		background-color: #00BEC9;
+		border-radius: 60px;
+		color: white;
+		font-size: 11px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		padding-right: 31px;
+		padding-left: 31px;
+	}
+
+	/*             MEDIA-mobile-group_7            */
+
+	.vetcare-team {
+		height: 1300px;
+	}
+
+	.vetcare-team__title {
+		text-align: center;
+		font-size: 30px;
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
+
+	.vetcare-team__subtitle {
+		text-align: center;
+		font-size: 12px;
+	}
+
+	.vetcare-team__media-mobile {
+		display: block;
+		width: 60%;
+		margin-left: 16%;
+	}
+
+	.vetcare-team__media-information {
+		width: 200px;
+		align-items: center;
+	}
+
+	.vetcare-team__signature {
+		display: none;
+	}
+
+	.vetcare-team__image {
+		display: none;
+	}
+
+	.vetcare-team__image-size {
+		margin-top: 30px;
+		width: 200px;
+		height: 200px;
+	}
+
+	.vetcare-team__signature-title {
+		font-size: 20px;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	.vetcare-team__signature-subtitle {
+		font-size: 15px;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.vetcare-team__social-network {
+		margin-top: 5px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.vetcare-team__social-network-icon {
+		width: 19px;
+		height: 19px;
+	}
+
+	.vetcare-team__social-network-icon:active {
+		width: 21px;
+		height: 21px;
+	}
+
+	/*             MEDIA-mobile-group_8            */
+
+	.all-time-information {
+		height: 550px;
+	}
+
+	.all-time-information__icon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 450px;
+	}
+
+	.all-time-information__icon-img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.all-time-information__icon-information {
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.all-time-information__text {
+		color: white;
+		height: 100px;
+	}
+
+	.all-time-information__title {
+		text-align: center;
+		font-size: 20px;
+		margin-top: 30px;
+	}
+
+	/*             MEDIA-mobile-group_9            */
+
+	.recent-posts {
+		height: 1360px;
+	}
+
+	.recent-posts__title {
+		text-align: center;
+		font-size: 30px;
+		margin-bottom: 0px;
+	}
+
+	.recent-posts__subtitle {
+		text-align: center;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+
+	.recent-posts__block-information-meta-mobile {
+		display: block;
+	}
+
+	.recent-posts__block-information {
+		display: none;
+	}
+
+	.recent-posts__image-information {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 70px;
+	}
+
+	.recent-posts__image {
+		margin-left: 16%;
+		width: 200px;
+		height: 200px;
+	}
+
+	.recent-posts__information-text {
+		align-items: center;
+		text-align: center;
+	}
+
+	.recent-posts__information {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.recent-posts__signature {
+		font-size: 15px;
+	}
+
+	.recent-posts__date {
+		color: #00BEC9;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+
+	.recent-posts__links {
+		margin-left: 35%;
+	}
+
+/*             MEDIA-mobile-group_10(footer)            */
+
+	.footer .container {
+		height: 370px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer__column {
+		display: none;
+	}
+
+	.footer__column-meta-mobile {
+		display: flex;
+		justify-content: space-between;
+		width: 90%;
+	}
+
+	.footer__column-meta {
+		display: flex;
+		flex-direction: column;
+		margin-top: 15px;
+		height: 160px;
+	}
+
+	.footer__About {
+		font-size: 20px;
+	}
+
+	.footer__About:hover {
+		font-size: 20px;
+	}
+
+	.footer__Services {
+		font-size: 20px;
+	}
+
+	.footer__Services:hover {
+		font-size: 20px;
+	}
+
+	.footer__subtitle {
+		font-size: 10px;
+	}
+
+	.footer__subtitle:hover {
+		font-size: 10px;
+	}
+
+	.footer__search-information {
+		width: 90%;
+		height: 200px;
+	}
+
+	.footer__title-search {
+		color: white;
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	.footer__subtitle-search {
+		text-align: center;
+		font-size: 12px;
+		color: white;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	.footer__form {
+		height: 50px;
+		margin-left: 30px;
+	}
+
+	.footer__input {
+		height: 38px;
+		width: 100px;
+	}
+
+	.footer__button-form {
+		height: 40px;
+		width: 80px;
+	}
+
+	.footer__img {
+		width: 15px;
+		height: 15px;
+	}
+
+	.footer__Services-button-meta {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.footer__button-social-network {
+		border-radius: 60px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.footer__search-image {
+		margin-top: 3px;
+		height: 15px;
+		width: 15px;
+	}
+
+	.footer__search-image:active {
+		margin-top: 3px;
+		height: 16px;
+		width: 16px;
 	}
 }
