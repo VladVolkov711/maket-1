@@ -2382,13 +2382,13 @@ button {
 	.home .container {
 		align-items: center;
 		color: white;
-		height: 370px;
+		height: 400px;
 	}
 
 	.home__information {
 		display: flex;
 		flex-direction: column;
-		height: 280px;
+		height: 70%;
 	}
 
 	.home__subtitle-media {
@@ -2455,9 +2455,8 @@ button {
 	}
 
 	.home__button-our-services-media:hover {
-		background-color: #FFD853;
-		border:1px solid #00ccff;
-		color: #00ccff;
+		border:1px solid #604A00;
+		color: #604A00;
 	}
 
 	.home__img {
