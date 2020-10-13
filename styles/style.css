@@ -232,6 +232,10 @@ button {
 	color: white;
 }
 
+.veterinar-informaton__button-meta {
+	display: none;
+}
+
 .veterinar-informaton__button:hover {
 	background-color: #FF8C00;
 	border-radius: 7px;
@@ -417,7 +421,6 @@ button {
 	float: right;
 	padding: 20px;
 	text-decoration: initial;
-	color: #00ccff;
 }
 
 .ear-treatment__button-play {
@@ -456,6 +459,14 @@ button {
 	top: 39%;
 	transform: translate(0,50%);
 	z-index: -1;
+}
+
+.ear-treatment__title-meta {
+	display: none;
+}
+
+.ear-treatment__subtitle-meta {
+	display: none;
 }
 
 /*             group_6            */
@@ -835,11 +846,6 @@ button {
 	margin-bottom: 5px;
 }
 
-.footer__search-information {
-	width: 550px;
-	height: 250px;
-}
-
 .footer__title-search {
 	color: white;
 	font-size: 35px;
@@ -859,8 +865,8 @@ button {
 .footer__form-media-mobile {
 	height: 60px;
 	display: flex;
+	float: right;
 	color: white;
-	margin-left: 80px;
 }
 
 .footer__input {
@@ -869,6 +875,7 @@ button {
 	border: 0;
 	background-color: #DAAC00;
 	padding-left: 20px;
+	color: white;
 }
 
 .footer__input::placeholder {
@@ -881,7 +888,12 @@ button {
 	background-color: #00BEC9;
 }
 
+.footer__button-form:hover {
+	background-color: #008B8B;
+}
+
 .footer__img {
+	margin-top: 3px;
 	width: 20px;
 	height: 20px;
 }
@@ -895,7 +907,6 @@ button {
 	width: 30px;
 	height: 30px;
 	margin-top: 30px;
-	margin-left: 9px;
 }
 
 .footer__search-image {
@@ -904,10 +915,8 @@ button {
 	width: 15px;
 }
 
-.footer__search-image:active {
-	margin-top: 3px;
-	height: 16px;
-	width: 16px;
+.footer__button-social-network:active {
+	background-color: gray;
 }
 
 .footer__column-meta-mobile {
@@ -1107,6 +1116,14 @@ button {
 	.ear-treatment__bloсk {
 		width: 150px;
 		height: 110px;
+	}
+
+	.ear-treatment__title-meta {
+		display: none;
+	}
+
+	.ear-treatment__subtitle-meta {
+		display: none;
 	}
 
 	/*             MEDIA-group_6            */
@@ -1337,7 +1354,7 @@ button {
 	}
 
 	.footer__Services-button-meta {
-		margin-left: 150px;
+		margin-left: 185px;
 	}
 
 	.footer__button-social-network {
@@ -1350,9 +1367,8 @@ button {
 		width: 12px;
 	}
 
-	.footer__search-image:active {
-		height: 15px;
-		width: 15px;
+	.footer__button-social-network:active {
+		background-color: gray;
 	}
 
 	.footer__Services-button-meta-mobile {
@@ -1613,18 +1629,19 @@ button {
 	.veterinar-informaton .container {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		height: 100%;
 	}
 
 	.veterinar-informaton__text {
-		height: 250px;
+		height: 200px;
 		z-index: 3;
 	}
 
 	.veterinar-informaton__title {
 		font-size: 30px;
 		margin-top: 20px;
-		height: 39%;
+		height: 48%;
 		text-align: center;
 	}
 
@@ -1634,20 +1651,34 @@ button {
 		text-align: center;
 	}
 
-	.veterinar-informaton__button {
+	.veterinar-informaton__button-meta {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		display: block;
 		padding: 10px;
 		color: white;
-		margin-left: 30%;
+		background-color: #FCC302;
+		border-radius: 7px;
+		text-decoration: initial;
+		margin-top: 50px;
 	}
 
-	.veterinar-informaton__button:hover {
-		padding: 10px;
+	.veterinar-informaton__button-meta:hover {
+		background-color: #FF8C00;
+	}
+
+	.veterinar-informaton__button {
+		display: none;
 	}
 
 	.veterinar-informaton__video {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		position: relative;
 		bottom: 10%;
-		margin-bottom: 40px;	
+		margin-bottom: 40px;
 	}
 
 	.veterinar-informaton__videoclip-dog  {
@@ -1655,9 +1686,13 @@ button {
 		width: 350px;
 	}
 
-	.veterinar-informaton__button-play{
+	.veterinar-informaton__button-play {
 		width: 60px;
 		height: 60px;
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		z-index: 2;
 	}
 
 	.veterinar-informaton__tringle{
@@ -1668,6 +1703,8 @@ button {
 	.veterinar-informaton__bloсk {
 		width: 240px;
 		height: 200px;
+		position: absolute;
+		transform: translate(-35%,65%);
 	}
 
 	/*             MEDIA-850px-group_4            */
@@ -1692,14 +1729,18 @@ button {
 		margin-bottom: 10px;
 	}
 
-	.postures-for-treatment__image {
+	.postures-for-treatment__image-information-meta {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	.postures-for-treatment__img {
-		width: 100%;
-		height: 100%;
+		width: 70%;
+		height: 40%;
 	}
 
 	.postures-for-treatment__signature-title {
@@ -1722,9 +1763,6 @@ button {
 
 	.postures-for-treatment__block-information-meta {
 		display: block;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		color: white;
 	}
 
@@ -1737,32 +1775,42 @@ button {
 	}
 
 	.ear-treatment__video {
-		margin-top: 50px;
 		width: 350px;
 		height: 300px;
 	}
 
 	.ear-treatment__text-information {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
 		margin-bottom: 40px;
 	}
 
-	.ear-treatment__title {
+	.ear-treatment__title-meta {
 		text-align: center;
 		font-size: 30px;
 		height: 60%;
 		margin-top: 30px;
 	}
 
-	.ear-treatment__subtitle {
+	.ear-treatment__title {
+		display: none;
+	}
+
+	.ear-treatment__subtitle-meta {
 		text-align: center;
 		font-size: 15px;
 	}
 
+	.ear-treatment__subtitle {
+		display: none;
+	}
+
 	.ear-treatment__Our-Service {
+		margin-top: 25px;
 		padding: 10px;
 		color: white;
-		margin-right: 30%;
-		
 	}
 
 	.ear-treatment__Our-Service:hover {
@@ -1778,7 +1826,7 @@ button {
 		height: 60px;
 		position: absolute;
 		left: 35%;
-		top: 55%;
+		top: 70%;
 	}
 
 	.ear-treatment__tringle {
@@ -1794,7 +1842,15 @@ button {
 		height: 220px;
 		position: absolute;
 		left: 35%;
-		top: 15%;
+		top: 42%;
+	}
+
+	.ear-treatment__title-meta {
+		display: block;
+	}
+
+	.ear-treatment__subtitle-meta {
+		display: block;
 	}
 
 	/*             MEDIA-850px-group_6            */
@@ -1976,7 +2032,7 @@ button {
 	/*             MEDIA-850px-group_8            */
 
 	.all-time-information {
-		height: 100%;
+		height: 420px;
 	}
 
 	.all-time-information__icon {
@@ -1998,7 +2054,7 @@ button {
 
 	.all-time-information__text {
 		color: white;
-		height: 100px;
+		height: 150px;
 		display: flex;
 	}
 
@@ -2108,6 +2164,7 @@ button {
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.footer__column {
@@ -2117,6 +2174,7 @@ button {
 	.footer__column-meta-mobile {
 		display: flex;
 		justify-content: space-around;
+		align-items: center;
 		width: 90%;
 	}
 
@@ -2155,6 +2213,9 @@ button {
 		margin-top: 20px;
 		width: 90%;
 		height: 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.footer__title-search {
@@ -2174,19 +2235,16 @@ button {
 	}
 
 	.footer__form-media-mobile {
-		width: 90%;
 		display: flex;
-		justify-content: center;
-		margin-left: 10px; 
 	}
 
 	.footer__input {
-		height: 38px;
+		height: 70%;
 		width: 300px;
 	}
 
 	.footer__button-form {
-		height: 40px;
+		height: 73%;
 		width: 80px;
 	}
 
@@ -2202,6 +2260,7 @@ button {
 	.footer__Services-button-meta-mobile {
 		position: relative;
 		bottom: 10%;
+		width: 70%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -2219,10 +2278,8 @@ button {
 		width: 13px;
 	}
 
-	.footer__search-image:active {
-		margin-top: 3px;
-		height: 16px;
-		width: 16px;
+	.footer__button-social-network:active {
+		background-color: gray;
 	}
 }
 
@@ -2415,13 +2472,13 @@ button {
 	}
 
 	.home__text-first {
-		font-size: 15px;
+		font-size: 80%;
 		margin-top: 50px;
 		margin-bottom: 0px;
 	}
 
 	.home__text-lorem-media {
-		font-size: 10px;
+		font-size: 60%;
 		margin-top: 40px;
 		margin-bottom: 0px;
 	}
@@ -2473,7 +2530,7 @@ button {
 	}
 
 	.veterinar-informaton__text {
-		height: 250px;
+		height: 150px;
 		z-index: 3;
 	}
 
@@ -2486,20 +2543,24 @@ button {
 
 	.veterinar-informaton__subtitle {
 		font-size: 10px;
-		height: 30%;
+		margin-top: 30px;
+		height: 40%;
 		text-align: center;
 	}
 
-	.veterinar-informaton__button {
+	.veterinar-informaton__button-meta {
 		padding: 10px;
 		color: white;
-		margin-left: 25%;
+		background-color: #FCC302;
+		border-radius: 7px;
+		text-decoration: initial;
+		margin-top: 30px;
 	}
 
 	.veterinar-informaton__video {
 		position: relative;
 		bottom: 10%;
-		margin-bottom: 40px;	
+		margin-bottom: 30px;	
 	}
 
 	.veterinar-informaton__videoclip-dog  {
@@ -2520,6 +2581,8 @@ button {
 	.veterinar-informaton__bloсk {
 		width: 140px;
 		height: 100px;
+		position: absolute;
+		transform: translate(-55%,120%);
 	}
 
 	/*             MEDIA-mobile-group_4            */
@@ -2544,14 +2607,16 @@ button {
 		margin-bottom: 10px;
 	}
 
-	.postures-for-treatment__image {
+	.postures-for-treatment__image-information-meta {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		width: 100%;
 	}
 
 	.postures-for-treatment__img {
-		width: 100%;
-		height: 100%;
+		width: 80%;
+		height: 40%;
 	}
 
 	.postures-for-treatment__signature-title {
@@ -2574,9 +2639,6 @@ button {
 
 	.postures-for-treatment__block-information-meta {
 		display: block;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		color: white;
 	}
 
@@ -2588,32 +2650,42 @@ button {
 		height: 100%;
 	}
 
+	.ear-treatment__video-information {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.ear-treatment__video {
-		margin-top: 50px;
 		width: 250px;
 		height: 200px;
 	}
 
 	.ear-treatment__text-information {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
 		margin-bottom: 40px;
 	}
 
-	.ear-treatment__title {
+	.ear-treatment__title-meta {
 		text-align: center;
 		font-size: 20px;
 		height: 60px;
 		margin-top: 10px;
 	}
 
-	.ear-treatment__subtitle {
+	.ear-treatment__subtitle-meta {
 		text-align: center;
 		font-size: 10px;
+		margin-top: 0px;
 	}
 
 	.ear-treatment__Our-Service {
+		margin-top: 30px;
 		padding: 10px;
 		color: white;
-		margin-right: 50px;
 		
 	}
 
@@ -2629,8 +2701,8 @@ button {
 		width: 50px;
 		height: 50px;
 		position: absolute;
-		left: 29%;
-		top: 55%;
+		left: 30%;
+		top: 70%;
 	}
 
 	.ear-treatment__tringle {
@@ -2645,8 +2717,8 @@ button {
 		width: 150px;
 		height: 120px;
 		position: absolute;
-		left: 50%;
-		top: 35%;
+		left: 46%;
+		top: 52%;
 	}
 
 	/*             MEDIA-mobile-group_6            */
@@ -2813,7 +2885,7 @@ button {
 	/*             MEDIA-mobile-group_8            */
 
 	.all-time-information {
-		height: 100%;
+		height: 420px;
 	}
 
 	.all-time-information__icon {
@@ -2835,14 +2907,12 @@ button {
 
 	.all-time-information__text {
 		color: white;
-		height: 100px;
-		display: flex;
+		height: 150px;
 	}
 
 	.all-time-information__title {
 		text-align: center;
 		font-size: 20px;
-		margin-top: 30px;
 	}
 
 	/*             MEDIA-mobile-group_9            */
@@ -2896,16 +2966,16 @@ button {
 	}
 
 	.recent-posts__signature {
-		font-size: 15px;
+		font-size: 18px;
 	}
 
 	.recent-posts__signature-subtitle {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.recent-posts__date {
 		color: #00BEC9;
-		font-size: 12px;
+		font-size: 14px;
 		text-transform: uppercase;
 	}
 
@@ -3009,20 +3079,20 @@ button {
 		width: 90%;
 		display: flex;
 		justify-content: center;
-		margin-left: 10px; 
 	}
 
 	.footer__input {
-		height: 38px;
-		width: 100px;
+		height: 70%;
+		width: 50%;
 	}
 
 	.footer__button-form {
-		height: 40px;
-		width: 80px;
+		height: 73%;
+		width: 20%;
 	}
 
 	.footer__img {
+		margin-top: 3px;
 		width: 15px;
 		height: 15px;
 	}
@@ -3043,14 +3113,11 @@ button {
 	}
 
 	.footer__search-image {
-		margin-top: 3px;
 		height: 13px;
 		width: 13px;
 	}
 
-	.footer__search-image:active {
-		margin-top: 3px;
-		height: 16px;
-		width: 16px;
+	.footer__button-social-network:active {
+		background-color: gray;
 	}
 }
