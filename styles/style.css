@@ -124,6 +124,7 @@ button {
 	display: flex;
 	flex-direction: column;
 	height: 480px;
+	z-index: 1;
 }
 
 .home__title {
@@ -202,6 +203,10 @@ button {
 
 .home__subtitle-media {
 	display: none;
+}
+
+.home__dog-img {
+	z-index: 0;
 }
 
 /*             group_3            */
@@ -541,25 +546,7 @@ button {
 	margin-right: 30px;
 }
 
-.buying-dog__trait50 {
-	border: 2px solid white;
-	width: 70px;
-	position: absolute;
-	top: 50%;
-	left: 45%;
-	transform: translate(-100%);
-}
-
-.buying-dog__trait40 {
-	border: 2px solid white;
-	width: 70px;
-	position: absolute;
-	top: 50%;
-	left: 45%;
-	transform: translate(-100%);
-}
-
-.buying-dog__trait45 {
+.buying-dog__trait {
 	border: 2px solid white;
 	width: 70px;
 	position: absolute;
@@ -1169,15 +1156,7 @@ button {
 		margin-right: 35px;
 	}
 
-	.buying-dog__trait50 {
-		width: 55px;
-	}
-
-	.buying-dog__trait40 {
-		width: 55px;
-	}
-
-	.buying-dog__trait45 {
+	.buying-dog__trait {
 		width: 55px;
 	}
 
@@ -1920,20 +1899,12 @@ button {
 		font-size: 40px;
 	}
 
-	.buying-dog__trait50 {
+	.buying-dog__trait {
 		width: 80px;
 		position: absolute;
     	top: 50%;
     	left: 45%;
     	transform: translate(-100%);
-	}
-
-	.buying-dog__trait40 {
-		width: 80px;
-	}
-
-	.buying-dog__trait45 {
-		width: 80px;
 	}
 
 	.buying-dog__button {
@@ -2790,27 +2761,8 @@ button {
 	.buying-dog__sale {
 	}
 
-	.buying-dog__trait50 {
-		width: 50px;
-		position: absolute;
-    	top: 50%;
-    	left: 40%;
-    	transform: translate(-100%);
-	}
-
-	.buying-dog__trait40 {
-		width: 50px;
-		position: absolute;
-    	top: 50%;
-    	left: 40%;
-    	transform: translate(-100%);
-	}
-
-	.buying-dog__trait45 {
-		width: 50px;
-		position: absolute;
-    	top: 50%;
-    	left: 40%;
+	.buying-dog__trait {
+		width: 55px;
     	transform: translate(-100%);
 	}
 
